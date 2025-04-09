@@ -1,5 +1,19 @@
 # Neovim config
 
+## Prerequisites
+
+### Debian
+
+- Copy/Paste to clipboard
+
+```sh
+# X11
+sudo apt install xclip
+
+# Wayland
+sudo apt install wl-clipboard
+```
+
 ## Setup
 
 1. Install [Neovim](https://github.com/neovim/neovim/blob/master/INSTALL.md)
