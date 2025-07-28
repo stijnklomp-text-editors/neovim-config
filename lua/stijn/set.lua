@@ -11,6 +11,14 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 
 vim.opt.wrap = true
+vim.opt.linebreak = true
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "*",
+  callback = function()
+    vim.opt_local.textwidth = 0                -- no auto newlines
+    vim.opt_local.formatoptions:remove("t")    -- disable auto-wrap
+  end,
+})
 
 vim.opt.incsearch = true -- incremental search
 
